@@ -1,0 +1,30 @@
+spring.application.name=employee-service
+# JDBC URL syntax: jdbc:mysql://<HOST>:<PORT>/<DATABASE_NAME>
+spring.datasource.url=jdbc:mysql://localhost:3306/paymentengine4?createDatabaseIfNotExist=true&useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC
+spring.datasource.username=root
+spring.datasource.password=Teejay345$
+spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
+
+# JPA / Hibernate Configuration
+spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.MySQLDialect
+spring.jpa.hibernate.ddl-auto=update
+spring.jpa.show-sql=false
+
+# Formats SQL queries across multiple lines for readability
+#spring.jpa.properties.hibernate.format_sql=true
+
+# Logs SQL statements through the standard logger at DEBUG level
+#logging.level.org.hibernate.SQL=DEBUG
+
+# Shows the actual parameter values bound to the '?' placeholders
+#logging.level.org.hibernate.orm.jdbc.bind=TRACE
+
+server.port=8081
+eureka.client.service-url.defaultZone=http://localhost:8761/eureka/
+
+logging.level.org.springframework.cloud.gateway.server.mvc=DEBUG
+logging.level.org.springframework.web=DEBUG
+
+spring.output.ansi.enabled=ALWAYS
+
+logging.pattern.console=%clr(%d{yyyy-MM-dd HH:mm:ss.SSS}){faint} %clr(%5p) %clr(${PID:- }){magenta} %clr(---){faint} %clr([%15.15t]){faint} %clr(%-40.40logger{39}){cyan} : %m%n
