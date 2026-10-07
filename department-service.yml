@@ -26,6 +26,8 @@ server:
   port: 8080
 
 spring:
+  boot:
+    message: Hello, Department Service
   output:
     ansi:
       enabled: ALWAYS
