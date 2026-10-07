@@ -29,8 +29,8 @@ spring:
   output:
     ansi:
       enabled: ALWAYS
-  application:
-    name: department-service
+  # application:
+  #   name: department-service
 
   datasource:
     # JDBC URL syntax: jdbc:mysql://<HOST>:<PORT>/<DATABASE_NAME>
