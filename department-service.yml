@@ -27,7 +27,7 @@ server:
 
 spring:
   boot:
-    message: Hello, Department Service
+    message: Hello, Department Service updated
   output:
     ansi:
       enabled: ALWAYS
